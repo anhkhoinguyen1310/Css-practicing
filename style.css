@@ -1,0 +1,319 @@
+body{
+    margin: 0;
+}
+
+.container > div, .container1 > div, .container3 > div,
+.container4>div
+{
+  height: 100px;
+  width: 100px;
+  font-size: 30px;
+  border: dotted;
+  background-color: aqua;
+}
+
+.container
+{
+    display: flex;
+}
+.box222
+{
+    margin-left: auto;
+    color: blue;
+}
+/*<!--Challenge 2-->*/
+.container1
+{
+    display: flex;
+    flex-direction: column;
+}
+.box2
+{
+    align-self: center;
+    /*or we can use margin: auto*/
+   margin: auto;
+}
+.box3
+{
+    align-self: flex-end;
+    /*or we can use margin-left: auto*/
+}
+/*<!--Challenge 3-->*/
+.container2
+{
+    display: flex;
+    justify-content: center;
+}
+.box5
+{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border: dotted;
+    position: relative;
+    z-index: 1;
+    justify-self: end;
+}
+.box6
+{  
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    margin-top: 3rem;
+    z-index: 2;
+}
+/*<!--Challenge 4-->*/
+.container3
+{
+   display: flex;
+   height: 15vh;
+}
+.box8
+{
+   position: relative;
+}
+.box9
+{  
+    position: absolute;
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+ 
+}
+/*<!--Challenge 5-->*/
+.container4{
+
+    display: flex;
+    flex-direction: column;
+}
+.box10 
+{
+    align-self: flex-end;
+}
+.box11
+{
+    margin: auto;
+}
+/* <!--Challenge 6-->*/ 
+ .container5{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 300px;
+}
+.box13{
+    height: 200px;
+    width: 400px;
+    position: absolute;  
+    background-color: tan;
+    right:0;
+}
+.box14{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: aqua;
+    right: 0;
+    bottom:0;
+    left: 0;
+
+}
+.box15{
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
+    background-color: aqua;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* <!--Challenge 7-->*/ 
+.container6{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10px;;
+}
+.box16{
+    height: 400px;
+    width: 400px;
+    background-color: salmon;
+    position: relative;
+}
+.box17{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: aqua;
+    bottom:0;
+    right: 0;
+}
+
+/* <!--Challenge 10-->*/ 
+.container7{
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+}
+.box18{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    background-color: salmon;
+    position: relative;
+    
+}
+.box18 > span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box19, .box20{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    left: 0;
+}
+/* <!--Challenge 11--> */
+.container8
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.box21 {
+    display: flex;
+    height: 400px;
+    width: 200px;
+    background-color: cornsilk;
+   justify-content: end;
+   position: relative;
+}
+.box21 > span
+{
+    position: absolute;
+    left: 0;
+}
+.box22 {
+    height: 200px;
+    width: 150px;
+    background-color: chocolate;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    
+}
+.box23 {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* <!--Challenge 11--> */
+.container9
+{height: 30vh;}
+.box24, .box26, .box28 {
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+}
+.box25,.box27
+{
+    height: 100px;
+    width: 100px;
+    background-color: darkgrey;
+}
+.box24 
+{
+    position: relative;
+}
+.box25,.box26,.box27, .box28
+{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+}
+/* <!--Challenge 12--> */
+.container10
+{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    height: 85vh;
+}
+.box29, .box32
+{
+    height: 400px;
+    width: 400px;
+    background-color: bisque;
+}
+.box30, .box31 
+{
+    height: 200px;
+    width: 200px;
+    background-color: burlywood;
+}
+.box29
+{
+    position: absolute;
+    left: 0;
+}
+.box31
+{
+    position: relative;
+    top: 30rem;
+}
+
+.box32
+{
+    position: absolute;
+    left: 160%;
+    top: 120%;
+    right: 30rem;
+    
+}
+/* <!--Challenge 13--> */
+.container11
+{
+    display: flex;
+    flex-direction: column;
+}
+.box33
+{
+    align-self: center; 
+    /* use the align-self because now the co-orinate of the flex box has changed 
+    cross ->main, main -> cross */
+}
+.box34
+{
+    display: flex;
+    align-self: center ;
+    padding-top: 1.5rem;
+    
+}
+.row3
+{
+    display: flex;
+    align-self: stretch;
+    justify-content: space-around;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+.left-img 
+{
+    padding-right: 1rem;
+}
+.macBurger
+{
+    padding-left: 1rem;
+}
